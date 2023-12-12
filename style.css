@@ -1,0 +1,337 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #28243cfe;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h1 {
+    color: #c94949;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50px;
+    background-color: #2f2a44fe;
+    color: white;
+    position: fixed;
+    flex-wrap:wrap;
+    top: 0;
+}
+
+nav a {
+    margin: 5px;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+    font-size: 0.8em;
+    
+}
+
+nav a:visited {
+    color: white;
+}
+
+
+/*  FIRST PAGE  */
+
+.first-page,
+.second-page,
+.third-page,
+.forth-page {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*
+.first-page-secondary-div{
+    min-height: 500px;
+}
+*/
+
+.first-page{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.first-page-description-div {
+    color: rgb(195, 189, 189);
+    max-width: 70%;
+}
+
+
+.first-page-secondary-div h3 {
+    color: #c94949;
+}
+
+
+.first-page-knowledge-main-div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECOND PAGE */
+
+.second-page-secondary-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-page-title-div {
+    display: flex;
+}
+
+
+.second-page-main-grid-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns, each 100px wide */
+    grid-template-rows: repeat(2, 1fr);
+    /* 2 rows, each 150px high */
+    gap: 5em;
+    justify-content: center;;
+    /* Center the grid horizontally */
+}
+
+
+
+.second-page-single-grid-div {
+    padding: 10px;
+    background-color: #3c3751fe;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 250px;
+    min-width: 250px;
+    
+}
+
+.second-page-single-grid-div span {
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.second-page-single-grid-div p {
+    color: rgba(211, 203, 203, 0.784);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+
+.second-page-single-grid-div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.second-page-buttons-div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+
+
+.second-page-buttons-div a {
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px 0px rgba(148, 140, 140, 0.1);
+    cursor: pointer;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.git-button {
+    background-color: #2e55bf;
+    color: white;
+}
+
+.netlify-button {
+    background-color: #51a28f;
+    color: black;
+}
+
+.second-page-buttons-div a:hover {
+    box-shadow: 0px 4px 8px 0px rgba(148, 140, 140, 0.3);
+
+}
+
+/*
+    Third Page
+*/
+
+.third-page-secondary-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.third-page-secondary-div div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.third-page-secondary-div img{
+    width: 100%;
+    max-width: 350px;
+}
+
+
+/*
+Forth Page
+*/
+
+.forth-page-secondary-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 400px;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+
+.forth-page-secondary-div h2{
+    color:#c94949;
+}
+
+.forth-page-gmail-number-div{
+    background-color: #3c3751fe;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forth-page-gmail-number-div span{
+    color:#c94949;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.forth-page-buttons-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.forth-page-buttons-div a {
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: fit-content;
+    cursor: pointer;
+    padding: 0px;
+    transition: all 0.2s;
+}
+
+.forth-page-buttons-div a:hover{
+    transform: scale(1.1);
+}
+
+.forth-page-buttons-div img {
+    padding: 3px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .second-page-main-grid-div {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on smaller screens */
+    }
+
+    .first-page-description-div {
+        max-width: 100%;
+    }
+
+    .third-page-secondary-div div{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .first-page-knowledge-single-div {
+        flex-basis: calc(50% - 10px);
+        /* Adjust to 50% for 2 columns */
+        text-align: center;
+        /* Center the content (if needed) */
+    }
+
+    .forth-page-buttons-div {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+/* Additional responsive design if needed */
+/* For very small screens, you might want to have only one column */
+@media screen and (max-width: 400px) {
+    .second-page-main-grid-div {
+        grid-template-columns: 1fr;
+        /* 1 column on very small screens */
+    }
+
+    .first-page-knowledge-single-div {
+        flex-basis: calc(100% - 10px);
+        /* Adjust to 50% for 2 columns */
+        text-align: center;
+        /* Center the content (if needed) */
+        margin: 20px
+    }
+
+    .second-page-buttons-div{
+        flex-direction: column;
+        text-align: center;
+    }
+}
