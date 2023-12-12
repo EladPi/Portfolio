@@ -33,6 +33,7 @@ nav a {
     text-decoration: none;
     letter-spacing: 0.7px;
     font-size: 0.8em;
+    color: white;
     
 }
 
@@ -83,6 +84,7 @@ nav a:visited {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 
@@ -294,8 +296,16 @@ Forth Page
     .third-page-secondary-div div{
         flex-direction: column;
     }
-
+    
 }
+
+@media screen and (max-width: 650px){
+    .second-page-main-grid-div {
+        grid-template-columns: 1fr;
+        /* 1 column on very small screens */
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .first-page-knowledge-single-div {
@@ -317,10 +327,6 @@ Forth Page
 /* Additional responsive design if needed */
 /* For very small screens, you might want to have only one column */
 @media screen and (max-width: 400px) {
-    .second-page-main-grid-div {
-        grid-template-columns: 1fr;
-        /* 1 column on very small screens */
-    }
 
     .first-page-knowledge-single-div {
         flex-basis: calc(100% - 10px);
