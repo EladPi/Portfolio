@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -58,12 +63,6 @@ nav a:visited {
     padding-bottom: 50px;
 }
 
-/*
-.first-page-secondary-div{
-    min-height: 500px;
-}
-*/
-
 .first-page{
     margin-top: 20px;
     padding: 30px;
@@ -111,12 +110,9 @@ nav a:visited {
 .second-page-main-grid-div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columns, each 100px wide */
     grid-template-rows: repeat(2, 1fr);
-    /* 2 rows, each 150px high */
     gap: 5em;
     justify-content: center;;
-    /* Center the grid horizontally */
 }
 
 
@@ -241,6 +237,14 @@ Forth Page
     flex-direction: column;
 }
 
+.forth-page-gmail-number-div a{
+    color: white;
+    text-decoration: none;
+}
+.forth-page-gmail-number-div a:visited{
+    color: white;
+}
+
 .forth-page-gmail-number-div span{
     color:#c94949;
     font-weight: bold;
@@ -286,7 +290,6 @@ Forth Page
 @media screen and (max-width: 1000px) {
     .second-page-main-grid-div {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on smaller screens */
     }
 
     .first-page-description-div {
@@ -302,7 +305,6 @@ Forth Page
 @media screen and (max-width: 650px){
     .second-page-main-grid-div {
         grid-template-columns: 1fr;
-        /* 1 column on very small screens */
     }
 }
 
@@ -310,9 +312,7 @@ Forth Page
 @media screen and (max-width: 600px) {
     .first-page-knowledge-single-div {
         flex-basis: calc(50% - 10px);
-        /* Adjust to 50% for 2 columns */
         text-align: center;
-        /* Center the content (if needed) */
     }
 
     .forth-page-buttons-div {
@@ -324,15 +324,11 @@ Forth Page
     
 }
 
-/* Additional responsive design if needed */
-/* For very small screens, you might want to have only one column */
 @media screen and (max-width: 400px) {
 
     .first-page-knowledge-single-div {
         flex-basis: calc(100% - 10px);
-        /* Adjust to 50% for 2 columns */
         text-align: center;
-        /* Center the content (if needed) */
         margin: 20px
     }
 
