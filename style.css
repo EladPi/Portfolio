@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -29,7 +29,7 @@ h1 {
     background-color: #2f2a44fe;
     color: white;
     position: fixed;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     top: 0;
 }
 
@@ -39,7 +39,7 @@ nav a {
     letter-spacing: 0.7px;
     font-size: 0.8em;
     color: white;
-    
+
 }
 
 nav a:visited {
@@ -63,37 +63,6 @@ nav a:visited {
     padding-bottom: 50px;
 }
 
-.first-page{
-    margin-top: 20px;
-    padding: 30px;
-}
-
-.first-page-description-div {
-    color: rgb(195, 189, 189);
-    max-width: 70%;
-}
-
-
-.first-page-secondary-div h3 {
-    color: #c94949;
-}
-
-
-.first-page-knowledge-main-div {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-
-
-
-
-
-
-
-
 
 /* SECOND PAGE */
 
@@ -109,10 +78,12 @@ nav a:visited {
 
 .second-page-main-grid-div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5em;
-    justify-content: center;;
+    justify-content: center;
+    ;
+
 }
 
 
@@ -123,10 +94,11 @@ nav a:visited {
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     min-height: 250px;
     min-width: 250px;
-    
+    height: fit-content;
+
+
 }
 
 .second-page-single-grid-div span {
@@ -142,9 +114,10 @@ nav a:visited {
 
 
 .second-page-single-grid-div img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 25%;
+    border: 1px solid darkgray;
 }
 
 .second-page-buttons-div {
@@ -180,6 +153,11 @@ nav a:visited {
     color: black;
 }
 
+.appstore-button {
+    background-color: #007AFF;
+    color: white;
+}
+
 .second-page-buttons-div a:hover {
     box-shadow: 0px 4px 8px 0px rgba(148, 140, 140, 0.3);
 
@@ -189,21 +167,21 @@ nav a:visited {
     Third Page
 */
 
-.third-page-secondary-div{
+.third-page-secondary-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.third-page-secondary-div div{
+.third-page-secondary-div div {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.third-page-secondary-div img{
+.third-page-secondary-div img {
     width: 100%;
     max-width: 350px;
 }
@@ -222,11 +200,11 @@ Forth Page
     padding-bottom: 80px;
 }
 
-.forth-page-secondary-div h2{
-    color:#c94949;
+.forth-page-secondary-div h2 {
+    color: #c94949;
 }
 
-.forth-page-gmail-number-div{
+.forth-page-gmail-number-div {
     background-color: #3c3751fe;
     width: fit-content;
     padding: 10px;
@@ -239,16 +217,17 @@ Forth Page
     flex-direction: column;
 }
 
-.forth-page-gmail-number-div a{
+.forth-page-gmail-number-div a {
     color: white;
     text-decoration: none;
 }
-.forth-page-gmail-number-div a:visited{
+
+.forth-page-gmail-number-div a:visited {
     color: white;
 }
 
-.forth-page-gmail-number-div span{
-    color:#c94949;
+.forth-page-gmail-number-div span {
+    color: #c94949;
     font-weight: bold;
     font-size: large;
 }
@@ -273,7 +252,7 @@ Forth Page
     transition: all 0.2s;
 }
 
-.forth-page-buttons-div a:hover{
+.forth-page-buttons-div a:hover {
     transform: scale(1.1);
 }
 
@@ -290,21 +269,14 @@ Forth Page
 
 
 @media screen and (max-width: 1000px) {
-    .second-page-main-grid-div {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .first-page-description-div {
-        max-width: 100%;
-    }
-
-    .third-page-secondary-div div{
+    .third-page-secondary-div div {
         flex-direction: column;
     }
-    
+
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     .second-page-main-grid-div {
         grid-template-columns: 1fr;
     }
@@ -312,10 +284,6 @@ Forth Page
 
 
 @media screen and (max-width: 600px) {
-    .first-page-knowledge-single-div {
-        flex-basis: calc(50% - 10px);
-        text-align: center;
-    }
 
     .forth-page-buttons-div {
         flex-direction: column;
@@ -323,18 +291,12 @@ Forth Page
         align-items: center;
         justify-content: center;
     }
-    
+
 }
 
 @media screen and (max-width: 400px) {
 
-    .first-page-knowledge-single-div {
-        flex-basis: calc(100% - 10px);
-        text-align: center;
-        margin: 20px
-    }
-
-    .second-page-buttons-div{
+    .second-page-buttons-div {
         flex-direction: column;
         text-align: center;
     }
